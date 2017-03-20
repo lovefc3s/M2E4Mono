@@ -5,10 +5,22 @@ public partial class MainWindow: Gtk.Window
 {
 	private Pango.TabArray Tabs;
 	private string _connectionstring;
+	private FileFilter _filter1;
+	private FileFilter _filter2;
 	public MainWindow () : base (Gtk.WindowType.Toplevel){
 		Tabs = new Pango.TabArray (0,true);
 		_connectionstring = "";
 		Build ();
+		_filter1 = new FileFilter ();
+		_filter1.Name = "All files";
+		_filter1.AddPattern("*");
+		_filename.AddFilter (_filter1);
+		_filter2 = new FileFilter ();
+		_filter2.Name =  "MySQL Workbench Models";
+		_filter2.AddPattern("*.mwb");
+		_filename.AddFilter (_filter2);
+
+		//_filename.AddFilter(FileFilter(
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)

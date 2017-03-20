@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/M2E4Mono.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="561 403">
+  <widget class="Gtk.Window" id="MainWindow" design-size="659 452">
     <property name="MemberName" />
     <property name="Title" translatable="yes">MySQL To Entity For Mono</property>
     <property name="Icon">stock:gtk-connect Menu</property>
@@ -114,6 +114,7 @@
         <child>
           <widget class="Gtk.FileChooserButton" id="_filename">
             <property name="MemberName" />
+            <property name="LocalOnly">False</property>
             <signal name="SelectionChanged" handler="OnFilenameSelectionChanged" />
           </widget>
           <packing>

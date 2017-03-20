@@ -27,6 +27,8 @@ Entity Frameworkで使用する　C#　ソースコードを生成します。
   C#で使用するNamespaceを必ず指定します。 
   + 接続TEST  
   接続テストを行い、結果を表示します。
+  + キャンセル  
+  各項目を消去します。
 ### MySQL WorkBench Models File について  
 MySQLへ初回の接続が確立された後、Databaseが存在しない時はDatabaseを自動生成します。  
 

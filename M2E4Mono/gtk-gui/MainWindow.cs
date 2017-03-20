@@ -90,6 +90,7 @@ public partial class MainWindow
 		// Container child table1.Gtk.Table+TableChild
 		this._filename = new global::Gtk.FileChooserButton (global::Mono.Unix.Catalog.GetString ("ファイルを選択"), ((global::Gtk.FileChooserAction)(0)));
 		this._filename.Name = "_filename";
+		this._filename.LocalOnly = false;
 		this.table1.Add (this._filename);
 		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1 [this._filename]));
 		w4.LeftAttach = ((uint)(1));
@@ -283,8 +284,8 @@ public partial class MainWindow
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 561;
-		this.DefaultHeight = 403;
+		this.DefaultWidth = 659;
+		this.DefaultHeight = 452;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this._test.Clicked += new global::System.EventHandler (this.OnTestClicked);
