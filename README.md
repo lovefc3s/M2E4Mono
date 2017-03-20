@@ -23,8 +23,10 @@ Entity Frameworkで使用する　C#　ソースコードを生成します。
   + Password  
   MySqlのパスワードを入力してください。  
   + Database  
-  MySqlのデータベース名を入力してください。存在確認はいたしません。存在しない時はDatabaseを自動生成します。  
-
+  MySqlのデータベース名を入力してください。存在確認はいたしません。存在しない時はDatabaseを自動生成します。 + Namespace  
+  C#で使用するNamespaceを必ず指定します。 
+  + 接続TEST  
+  接続テストを行い、結果を表示します。
 ### MySQL WorkBench Models File について  
 MySQLへ初回の接続が確立された後、Databaseが存在しない時はDatabaseを自動生成します。  
 
